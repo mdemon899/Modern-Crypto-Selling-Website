@@ -6,13 +6,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     /* font-family: 'Nunito', sans-serif;
     font-family: 'Poppins', sans-serif; */
 }
 
 body {
-    background: #04011C
+    /* background: #04011C; */
+    color: #fff;
+    background: radial-gradient(circle at 1.8% 4.8%, rgb(17, 23, 58) 0%, rgb(13, 27, 62) 90%);
 }
+
+/* Header Section Start */
 
 .navbar-brand {
     background: linear-gradient(104deg, #DF1CFF -25.59%, #EA0070 138%);
@@ -28,14 +33,14 @@ body {
 
 .nav-btn {
     border-radius: 8px;
-    border: 1.5px solid var(--Unnamed-Color, #E50AA7);
-    background: var(--Unnamed-Color, rgba(255, 255, 255, 0.05));
+    border: 1.5px solid #E50AA7;
+    background: rgba(255, 255, 255, 0.05);
     box-shadow: 0px 16px 80px 0px rgba(208, 17, 204, 0.15);
     color: #fff;
     padding: 12px 40px;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
-    transition: background ease 0.4s;
+    transition: all ease 0.4s;
 }
 
 .nav-btn:hover {
@@ -48,9 +53,114 @@ body {
 }
 
 .nav-link:hover {
-    color: #fff
+    color: #fff;
 }
 
 .navbar-toggler {
     background: linear-gradient(104deg, #e11cff9c -25.59%, #ea0071b9 138%);
 }
+
+/* Header Section End */
+
+/* Hero Section Start */
+.hero_title {
+    color: #FFF;
+    font-family: 'Nunito', 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-style: normal;
+    margin-top: 100px;
+    font-weight: 900;
+    line-height: 130%;
+}
+
+.hero_title span {
+    color: #1EE0E1;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.hero_des {
+    color: #FFF;
+    font-family: 'Poppins', 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.hero_btn {
+    padding: 12px 40px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(104deg, #DF1CFF -25.59%, #EA0070 138%);
+    box-shadow: 0px 9px 100px 0px rgba(208, 17, 204, 0.35);
+    transition: all ease-in-out 0.4s;
+}
+
+.hero_btn:hover {
+    background: linear-gradient(104deg, #ac1cff -25.59%, #ea000c 138%);
+}
+
+.nft_market_overview h4 img {
+    margin-right: 10px;
+}
+
+.nft_market_overview h4 {
+    font-family: "Nunito", 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 118.5%;
+    margin-bottom: 1rem;
+}
+
+.nft_market_overview_items h5 {
+    font-family: "Nunito", 'Poppins', sans-serif;
+    font-size: 1em;
+    opacity: 0.8;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.nft_market_overview_items p {
+    font-family: "Nunito", 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 118.5%;
+}
+
+/* Hero Section End */
+
+
+
+
+
+/* Responsive Section Start */
+
+@media only screen and (max-width: 768px) {
+    .hero_title {
+        margin-top: unset;
+    }
+
+    .nft_market_overview h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:1120px) {
+    .hero_img {
+        margin-top: 60px;
+    }
+
+    .nft_market_overview h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .hero_img {
+        width: 70%;
+    }
+}
+
+/* Responsive Section End */
