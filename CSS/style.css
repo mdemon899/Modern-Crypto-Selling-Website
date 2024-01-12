@@ -131,9 +131,56 @@ body {
 
 /* Hero Section End */
 
+/* Popular NFTs Section Start */
+.popular_nfts_nav a {
+    color: #fff;
+    font-family: 'Nunito';
+    font-size: 1.4rem;
+    opacity: 0.8;
+    font-weight: 500;
+    line-height: 118.5%;
+    text-decoration: none;
+}
 
+.popular_nfts_nav {
+    text-align: center;
+}
 
+.item>img {
+    padding: 30px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.03);
+}
 
+/* Popular NFTs Section End */
+.but_product_btn {
+    padding: 12px 40px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background: linear-gradient(104deg, #DF1CFF -25.59%, #EA0070 138%);
+    box-shadow: 0px 9px 100px 0px rgba(208, 17, 204, 0.35);
+}
+
+.but_product_btn:hover {
+    background: linear-gradient(104deg, #ac1cff -25.59%, #ea000c 138%);
+}
+
+.explore_nfts_btn {
+    width: 300px;
+    padding: 12px 40px;
+    border-radius: 8px;
+    border: 1.5px solid #E50AA7;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    box-shadow: 0px 16px 80px 0px rgba(208, 17, 204, 0.15);
+    transition: all ease 0.4s;
+}
+
+.explore_nfts_btn:hover {
+    background: linear-gradient(104deg, #DF1CFF -25.59%, #EA0070 138%);
+}
 
 /* Responsive Section Start */
 
@@ -144,6 +191,17 @@ body {
 
     .nft_market_overview h4 {
         font-size: 1.2rem;
+    }
+
+    .popular_nfts_nav a {
+        font-size: 1rem;
+    }
+
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
