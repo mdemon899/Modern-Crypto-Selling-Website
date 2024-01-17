@@ -301,6 +301,14 @@ body {
 
 /* Category Section End */
 
+/* Brand Section Start */
+.brand_image img {
+    background: transparent;
+    border: none;
+}
+
+/* Brand Section End */
+
 /* Responsive Section Start */
 
 @media only screen and (max-width: 768px) {
